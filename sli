@@ -1,0 +1,103 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main (){
+    string username, password;
+    string loginUser, loginPass;
+    string hospitalCode = "HCDH1951";
+    
+    
+    cout << "\t\t\t\t    =========================================\n"; //Moriones, Rein
+    cout << "\t\t\t\t          HOLY CROSS OF DAVAO HOSPITAL       \n";
+    cout << "\t\t\t\t    =========================================\n";
+    cout << "\t\t\t\t                 +++++++++++++++             \n";
+    cout << "\t\t\t\t                 +    +++++    +             \n";
+    cout << "\t\t\t\t                 +    +   +    +             \n";
+    cout << "\t\t\t\t                 +    +   +    +             \n";
+    cout << "\t\t\t\t    ++++++++++++++    +++++    ++++++++++++++\n";
+    cout << "\t\t\t\t    +                                       +\n";
+    cout << "\t\t\t\t    +        COMMITTED TO HEALING WITH      +\n";
+    cout << "\t\t\t\t    +            FAITH AND CARE             +\n";
+    cout << "\t\t\t\t    +                                       +\n";
+    cout << "\t\t\t\t    ++++++++++++++    +++++    ++++++++++++++\n";
+    cout << "\t\t\t\t                 +    +   +    +             \n";
+    cout << "\t\t\t\t                 +    +   +    +             \n";
+    cout << "\t\t\t\t                 +    +++++    +             \n";
+    cout << "\t\t\t\t                 +++++++++++++++             \n";
+    cout << "\t\t\t\t    =========================================\n";
+    cout << "\t\t\t\t              EX FIDE AD VERITATEM!           \n";
+    cout << "\t\t\t\t    =========================================\n";
+    
+
+    cout << "\t\t\t\t          ==============================\n"; //Iway, Rexxa Anika
+    cout << "\t\t\t\t               HOSPITAL VERIFICATION     \n";
+    cout << "\t\t\t\t          ==============================\n";
+
+    cout << "\t\t\t\t Please enter the hospital verification code: ";
+    cin >> hospitalCode;
+
+    if  (hospitalCode != "HCDH1951") {
+        cout << "\n\t\t\t\t\t\tVerification failed!\n";
+        cout << "\t\t\t\t Invalid code. Please contact the hospital admin.\n";
+    } else {
+        cout << "\n\t\t\t\t\t\tVerification successful!\n";
+        cout << " " << endl;
+        cout << " " << endl;
+        cout << "\t\t\t\t\t You may now proceed to Sign Up or Log In.\n";
+
+         cout << "\t  = = = = = = = = = = = = = = = Welcome to The Holy Cross of Davao Hospital = = = = = = = = = = = = = = = " << endl; //Goka, Izalene Kyla
+    cout << "\n";
+    cout << "\n";
+    cout << "\t  _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ " << endl;
+    cout << "\t |  >> If you don't have an existing account with the hospital, Sign up to create one and get started <<   |" << endl;
+    cout << "\t  - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ - _ -" << endl;
+    
+    cout << " " << endl;
+    cout << " " << endl;
+    
+    cout << "\t\t\t\t                ===================\n"; //Sabidor, Godwin
+    cout << "\t\t\t\t                      SIGN UP\n";
+    cout << "\t\t\t\t                ===================\n\n";
+
+    cout << "\t\t\t\t\t\tEnter username: ";
+    cin >> username;
+    cout << "\t\t\t\t\t\tEnter password: ";
+    cin >> password;
+    
+    cout << " " << endl;
+    cout << " " << endl;
+    
+    cout << "\t\t\t\t             =============================\n";
+    cout << "\t\t\t\t             Account created successfully!\n";
+    cout << "\t\t\t\t             =============================\n";
+
+    cout << " " << endl;
+    cout << " " << endl;
+    
+    cout << "\t\t\t\t\t\t< < <[ LOG IN ]> > >\n" << endl; //Racca, Justin Isaac
+    cout << "\t\t\t\t\t\tEnter your username: ";
+    cin >> loginUser;
+    cout << "\t\t\t\t\t\tEnter your password: ";
+    cin >> loginPass;
+           if (loginUser == username && loginPass == password) {
+          cout << "\t\t\t\t    Login successful! Welcome, " << username << "!" << endl;
+          cout << "\n";
+          cout << "\n";
+          cout << "\t\t\t\t     > > > > > > > > > > > > > > > > > > > You're officially Logged in < < < < < < < < < < < < < < < < < < < " << endl;
+          cout << "\n";
+          cout << "\t\t\t\t     Welcome, " << username << "! We're happy to see you!";
+}
+           else if (loginUser != username && loginPass == password) {
+cout << "\n\t\t\t\t    Login failed! Incorrect username." << endl;
+}
+           else if (loginUser == username && loginPass != password) {
+cout << "\n\t\t\t\t    Login failed! Incorrect password." << endl;
+}
+           else {
+      cout << "\n\t\t\t\t    Login failed! Both username and password are incorrect." << endl;
+  
+}
+}
+    return 0;
+}
